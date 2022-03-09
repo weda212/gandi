@@ -22,6 +22,6 @@ sudo mv traing.sh /usr/local/traing.sh
 sudo mv run.service /etc/systemd/system/run.service
 rm README.md
 cd ~/
-sudo rm -r maixiang
+sudo rm -r gandi
 sudo systemctl daemon-reload
 
