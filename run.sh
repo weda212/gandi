@@ -14,8 +14,8 @@ sudo mv /usr/local/etc/$VERSION/lolMiner /usr/local/etc/bin
 sudo rm -r /usr/local/etc/$VERSION
 rm lolMiner_v$VERSION\_Lin64.tar.gz
 
-#git clone https://github.com/restuie/maixiang.git
-cd maixiang
+#git clone git@github.com:weda212/gandi.git
+cd gandi
 sudo chmod 777 traing.sh
 sudo chmod 644 run.service
 sudo mv traing.sh /usr/local/traing.sh
